@@ -1,0 +1,42 @@
+@import '/src/app/styles/transitions.scss';
+.menubar_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    figure {
+        overflow: hidden;
+        margin: 8px;
+        min-width: 60px;
+        max-width: 80px;
+        border: 1px solid #ddd;
+        width: 100%;
+        border-radius: 50%;
+        img {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            max-width: 100%;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    .menu_list {
+        padding: 10px;
+        .menu_item {
+            font-size: 14px;
+            color: #666;
+            font-family: "proxima-nova";
+            letter-spacing: 2px;
+            font-weight: 300;
+            line-height: 1.5em;
+            text-transform: uppercase;
+            &:hover {
+                cursor: pointer;
+                opacity: 1;
+                -webkit-animation: flash 1.5s;
+                animation: flash 1.5s;
+            }
+        }
+    }
+}
