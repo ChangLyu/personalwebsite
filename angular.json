@@ -103,6 +103,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://github.com/changlyu/personalwebsite",
+            "name": "Chang Lyu",
+            "email": "Chang_Lyu@outlook.com"
+          }
         }
       }
     }
