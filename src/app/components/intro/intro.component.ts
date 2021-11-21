@@ -1,3 +1,4 @@
+import { introPageConfig } from './../../constants/intro-config';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroComponent implements OnInit {
 
-  constructor() { }
+  introPageConfig: any;
+  constructor() {
+    this.introPageConfig = introPageConfig;
+  }
 
   ngOnInit(): void {
   }

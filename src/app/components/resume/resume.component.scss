@@ -1,0 +1,47 @@
+.part-container {
+    margin-top: 30px;
+    font-family: "proxima-nova";
+    .part-name {
+        font-size: 14px;
+        color: #666;
+        letter-spacing: 2px;
+        font-weight: bold;
+        line-height: 1.5em;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .part-icon {
+        margin-right: 10px;
+    }
+    .small-container {
+        margin: 10px;
+    }
+    .education-container {
+        .education-major {
+            display: flex;
+            justify-content: space-between;
+            .education-duration {
+                font-style: italic;
+                font-size: 14px;
+                color: #4e4d4d;
+            }
+        }
+        .education-university {
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
+    .workexperience-container {
+        .experience-title {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            .experience-role {
+                font-style: italic;
+                font-size: 14px;
+                color: #4e4d4d;
+            }
+        }
+        .experience-description {}
+    }
+}

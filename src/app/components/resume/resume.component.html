@@ -1,1 +1,34 @@
-<p>resume works!</p>
+<div class="container">
+    <div class="part-container">
+        <div class="part-name">
+            <span class="part-icon"><i class="fas fa-university"></i></span> {{resumeConfig.education.name}}
+        </div>
+        <div class="education-container small-container" *ngFor="let education of resumeConfig.education.content">
+            <div class="education-major">{{education.major}}<span class="education-duration">{{education.duration}}</span></div>
+            <div class="education-university">{{education.university}}</div>
+        </div>
+    </div>
+    <!-- <div class="part-container">
+        <div class="part-name">
+            <span class="part-icon"><i class="fas fa-network-wired"></i></span>{{resumeConfig.qualification.name}}
+        </div>
+        <div *ngFor="let skill of resumeConfig.qualification.content">
+            <div>{{skill.title}}</div>
+            <div>{{skill.content}}</div>
+        </div>
+    </div> -->
+
+    <div class="part-container">
+        <div class="part-name">
+            <span class="part-icon"><i class="fas fa-laptop-code"></i></span> {{resumeConfig.workExperience.name}}
+        </div>
+        <div class="workexperience-container small-container" *ngFor="let experience of resumeConfig.workExperience.content">
+            <div class="experience-title">{{experience.title}}<span class="experience-role">{{experience.role}}</span> </div>
+            <ul class="experience-description">
+                <li *ngFor="let des of experience.description">{{des}}</li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>

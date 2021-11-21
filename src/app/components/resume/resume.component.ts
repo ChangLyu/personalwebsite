@@ -1,3 +1,4 @@
+import { resumeConfig } from './../../constants/resume-config';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor() { }
+  resumeConfig: any;
+  constructor() {
+    this.resumeConfig = resumeConfig;
+  }
 
   ngOnInit(): void {
   }

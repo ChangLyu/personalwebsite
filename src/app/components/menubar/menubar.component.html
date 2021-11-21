@@ -4,6 +4,6 @@
     </figure>
 
     <div *ngFor="let menu of menuList" class="menu_list">
-        <div class="menu_item">{{menu.name}}</div>
+        <a [routerLink]="menu.link" class="menu_item">{{menu.name}}</a>
     </div>
 </div>
