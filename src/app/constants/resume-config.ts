@@ -29,7 +29,7 @@ export const resumeConfig = {
         name: "work experience",
         content: [{
             title: "Morgan Stanley Associate",
-            role: "full stack developer",
+            role: "full stack developer(2017-now)",
             description: [
                 "Developed Angular 2+  and Java EE based web applications.",
                 "Experienced with front-end projects based on angular 2+, ngrx, rxjs, highcharts and Karma/Jasmine for testing.",
