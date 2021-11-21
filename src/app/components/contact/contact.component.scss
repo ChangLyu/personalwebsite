@@ -1,0 +1,12 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    .contact-email {
+        margin-right: 20px;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
