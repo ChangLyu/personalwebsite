@@ -1,37 +1,24 @@
-import { ContactComponent } from './components/contact/contact.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { IntroComponent } from './components/intro/intro.component';
-import { ResumeComponent } from './components/resume/resume.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-
   {
-    path: 'intro',
-    component: IntroComponent
-  },
-  {
-    path: 'resume',
-    component: ResumeComponent
-  },
-  {
+    path: 'menu',
+    loadChildren: () => import('./general-infor/general-infor.module').then(m => m.GeneralInforModule)
+  }, {
     path: 'projects',
-    component: ProjectsComponent
-  },
-  {
-    path: 'contact',
-    component: ContactComponent
+    loadChildren: () => import('./angular-projects/angular-projects.module').then(m => m.ProjectsModule)
   },
   {
     path: '',
-    redirectTo: '/intro',
+    redirectTo: '/menu/intro',
     pathMatch: 'full'
   }
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { enableTracing: false })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

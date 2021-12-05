@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Wikipedia Search- In Progress</h2>
+    <!-- <input #term type="text" (keyup)="wikiSearch(term.value)"> -->
+
+
+    <form [formGroup]="form">
+
+        <label for="country">Country: </label>
+        <input id="country" type="text" formControlName="country">
+
+        <div *ngFor="let country of countryResult"> {{country.name.official}}</div>
+        <div *ngIf="countryError"> {{countryError}}</div>
+        <!--         
+        <label for="province">Province: </label>
+        <input id="province" type="text" formControlName="province"> -->
+
+    </form>
+
+</div>

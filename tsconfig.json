@@ -3,6 +3,26 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@constants/*": [
+        "./src/app/constants/*"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@models/*": [
+        "./src/app/models/*"
+      ],
+      "@assets/*": [
+        "./assets/*"
+      ],
+      "@projects/*": [
+        "./src/app/angular-projects/*"
+      ],
+      "@infor/*": [
+        "./src/app/general-infor/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

@@ -11,19 +11,19 @@ export class MenubarComponent implements OnInit {
   constructor() {
     this.menuList = [{
       name: "Intro",
-      link: "/intro"
+      link: "/menu/intro"
     },
     {
       name: "Resume",
-      link: "/resume"
+      link: "/menu/resume"
     },
     {
       name: "Projects",
-      link: "/projects"
+      link: "/menu/projects"
     },
     {
       name: "Contact",
-      link: "/contact"
+      link: "/menu/contact"
     }]
   }
 

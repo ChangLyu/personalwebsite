@@ -1,5 +1,5 @@
-import { introPageConfig } from './../../constants/intro-config';
 import { Component, OnInit } from '@angular/core';
+import { introPageConfig } from '@constants/intro-config';
 
 @Component({
   selector: 'app-intro',

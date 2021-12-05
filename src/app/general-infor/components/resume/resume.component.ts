@@ -1,5 +1,6 @@
-import { resumeConfig } from './../../constants/resume-config';
+
 import { Component, OnInit } from '@angular/core';
+import { resumeConfig } from '@constants/resume-config';
 
 @Component({
   selector: 'app-resume',
